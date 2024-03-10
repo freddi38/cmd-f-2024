@@ -2,4 +2,31 @@ GET http://localhost:3000/runners
 
 ###
 
-GET http://localhost:3000/runners/15
+GET http://localhost:3000/runners/65ed230722b782ae84411d5d
+
+###
+
+POST http://localhost:3000/runners
+Content-Type: application/json
+
+{
+    "name": "Sabrina",
+    "activities": ["Running", "Walking"],
+    "timeOfDay": 1500,
+    "avgPace": 345,
+    "avgDistance": 2.60,
+    "recentActivities": []
+}
+
+###
+
+DELETE http://localhost:3000/runners/65ed202ae3cc7e65f929a2da
+
+###
+
+PATCH http://localhost:3000/runners/65ed230722b782ae84411d5d
+Content-Type: application/json
+
+{
+    "name": "Sabrina Lou"
+}
