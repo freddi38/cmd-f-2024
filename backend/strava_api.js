@@ -1,11 +1,11 @@
 const auth_link = "https://www.strava.com/oauth/token"
 
-// function getActivites(res){
-
-//     const activities_link = `https://www.strava.com/api/v3/athlete/activities?access_token=${res.access_token}`
-//     fetch(activities_link)
-//         .then((res) => console.log(res.json()))
-// }
+function getActivites(res){
+    reAuthorize()
+    const activities_link = `https://www.strava.com/api/v3/athlete/activities?access_token=${res.access_token}`
+    fetch(activities_link)
+        .then((res) => console.log(res.json()))
+}
 
 function reAuthorize(){
     fetch(auth_link,{
@@ -26,5 +26,3 @@ function reAuthorize(){
     }).then(res => res.json())
         .then(res => getActivites(res))  
 }
-
-reAuthorize()

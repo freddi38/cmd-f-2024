@@ -18,12 +18,11 @@ function App() {
   }, []);
 
   return (
-    <div>
-<div className="logo">
-    <img src={logo}/>
-</div>
+    <div className="App">
+      <div className="logo">
+          <img src={logo} alt="Girls Gone Running"/>
+      </div>
 
-<body>
     <div className="container">
         <div className="left-panel">
 
@@ -44,21 +43,20 @@ function App() {
             </div>
         </div>
         <div className="right-panel">
-            <div className="user-list" onClick={showProfile("john")}>
+            <div className="user-list" onClick={() => showProfile("john")}>
                 <h2>User List</h2>
-                <div className="user" onClick={showProfile("john")}>
+                <div className="user" onClick={() => showProfile("john")}>
                     <p>John Doe</p>
                 </div>
-                <div className="user"  onClick={showProfile("john")}>
+                <div className="user"  onClick={() => showProfile("john")}>
                     <p>Jane Smith</p>
                 </div>
-                <div className="user"  onClick={showProfile("john")}>
+                <div className="user"  onClick={() => showProfile("john")}>
                     <p>Alice Johnson</p>
                 </div>
             </div>
         </div>
     </div>
-    </body>
     </div>
   );
 }

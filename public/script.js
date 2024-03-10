@@ -8,10 +8,9 @@ function showProfile(username) {
 const auth_link = "https://www.strava.com/oauth/token"
 
 function getActivities(res){
-    console.log(res.access_token)
     const activities_link = `https://www.strava.com/api/v3/athlete/activities?access_token=${res.access_token}`
     fetch(activities_link)
-        .then((res) => console.log(res))
+        .then((res) => console.log(res.json()))
 }
 
 function reAuthorize(){
@@ -32,7 +31,6 @@ function reAuthorize(){
         })
     }).then(res => res.json())
         .then(res => {
-            console.log(res)
             getActivities(res)
         })  
             
