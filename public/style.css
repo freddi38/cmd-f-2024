@@ -1,0 +1,11 @@
+/* styles.css */
+#counter {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#incrementButton {
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
