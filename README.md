@@ -1,4 +1,9 @@
 # Cmd-f 2024
-### Girls Gone Running
+## Girls Gone Running
+## By Freddi and Sabrina
 
-Community Building track: buddy up with other women and gender minorities who have similar activity habits to you to build new friendships, keep your fitness up, and increase your safety when you're out running on your own!
+Community building track: form a community of female runners who can run together in order create community, maintain fitness motivation, and keep each other safe in public spaces.
+
+This application has a database of users with statistics for each user with data such as average run time, average speed, common route locations, and common run times. Each user can then see a list of users with similar habits that they can chat with to coordinate runs or walks to go on together. A user can also send a notification to nearby users when starting a run to invite other users to join them.
+
+It uses HTML and Express.js, handles Strava API, and connects to a database using MongoDB.
