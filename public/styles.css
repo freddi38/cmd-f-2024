@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: relative;
+    margin-top: 20px; /* Adjust as needed */
+    margin-right: 20px; /* Adjust as needed */
+    width: 10%; /* Adjust the width as needed */
+    height: auto; /* Automatically adjusts the height based on the width */
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.profile {
+    background-color: #ffc0cb;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.profile h2 {
+    margin-top: 0;
+}
+
+.profile-details {
+    margin-top: 20px;
+}
+
+.special-features {
+    margin-top: 20px;
+    background-color: #ffc0cb;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.right-panel {
+    flex: 1;
+    background-color: #ddd;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.user {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.user:hover {
+    background-color: #f0f0f0;
+}
