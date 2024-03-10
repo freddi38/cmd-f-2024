@@ -16,7 +16,6 @@ db.once('open', () => console.log('Connected to Database'))
 const runnersRouter = require('./routes/runners')
 app.use('/runners', runnersRouter)
 
-
 app.use(express.json())
 app.use(cors())
 
@@ -26,8 +25,19 @@ app.use(cors())
 // Define API routes and other backend logic
 
 // Serve the React app for any other requests
-app.get('/activities', (req, res) => {
-  res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
+app.get('/user', (req, res) => {
+
+  
+  res.json({
+
+    "name": "Sabrina",
+    "activities": ["Running", "Walking"],
+    "timeOfDay": 1500,
+    "avgPace": 345,
+    "avgDistance": 2.60,
+    "recentActivities": []
+
+});
 });
 
 const port = process.env.PORT || 3001;
