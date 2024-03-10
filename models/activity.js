@@ -7,7 +7,7 @@ const activitySchema = new mongoose.Schema({
         required: true
     },
     startTime: {
-        type: Date,
+        type: Number,
         required: true
     },
     distance: {
@@ -27,7 +27,7 @@ const activitySchema = new mongoose.Schema({
         required: true
     },
     participants: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Runner'
+        type: Array,
+        required: true
     }
 })

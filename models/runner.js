@@ -6,8 +6,7 @@ const runnerSchema = new mongoose.Schema({
         required: true
     },
     activities: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Activity',
+        type: Array,
         required: true
     },
     timeOfDay: {
