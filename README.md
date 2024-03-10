@@ -6,4 +6,4 @@ Community building track: form a community of female runners who can run (or wal
 
 This application has a database of users with statistics for each user such as average run time, average speed, common route locations, and common run times. Each user can then see a list of users with similar habits that they can chat with to coordinate runs or walks to go on together. A user can also send a notification to nearby users when starting a run to invite other users to join them.
 
-It uses HTML and Express.js, handles Strava API, and connects to a database using MongoDB.
+It uses HTML, Express.js, retrieves user information from Strava API, and connects to a MongoDB database.
