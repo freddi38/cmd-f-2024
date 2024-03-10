@@ -1,9 +1,9 @@
 const express = require('express')
 
-const app = express()
+// const app = express()
 
-// Serve static files from the public directory
-app.use(express.static('public'));
+// // Serve static files from the public directory
+// app.use(express.static('public'));
 
 // setting up other route handlers
 const router = express.Router()
